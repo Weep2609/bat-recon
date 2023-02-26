@@ -13,9 +13,9 @@ class color():
 
 # logo
 def logo():
-    print(f"\n  {color.red}/(__M__)\\{color.end}\tbatsub.py")
-    print(f" {color.red}/, ,   , ,\\{color.end}\tVersion 1.1")
-    print(f"{color.red}/' ' 'V' ' '\\{color.end}\tWrite by weep2609\n")
+    print(f"\n  {color.red}/(__M__)\\{color.end}\t{color.green}bat_sub.py{color.end}")
+    print(f" {color.red}/, ,   , ,\\{color.end}")
+    print(f"{color.red}/' ' 'V' ' '\\{color.end}\t{color.green}Written by weep2609{color.end}\n")
 
 # Object Declaration
 parse = argparse.ArgumentParser()
