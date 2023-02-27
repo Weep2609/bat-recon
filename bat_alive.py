@@ -18,7 +18,7 @@ def logo():
 
 parse = argparse.ArgumentParser()
 
-parse.add_argument('--httprobe', action='store_true', help='checks for HTTP on port 80, 8080 and HTTPS on port 443, 8443')
+parse.add_argument('--httprobe', action='store_true', help='checks for HTTP on port 80 and HTTPS on port 443')
 parse.add_argument('--httpx', action='store_true', help='Check for HTTPS and return title, status code, content length, content type')
 parse.add_argument('-l', '--list', type=str, help='List raw subdomain')
 parse.add_argument('-o', '--output', type=str, help='Output saved to', default='alive_subdomain.txt')
@@ -43,7 +43,7 @@ def main():
         logo()
         check_file()
         print(f" {color.cyan}Starting httprobe...{color.end} ".center(50, '-'))
-        subprocess.call(f'cat {list} | ./Tools/httprobe -p http:8080 -p https:8443 | tee {output}',shell=True)
+        subprocess.call(f'cat {list} | ./Tools/httprobe | tee {output}',shell=True)
         print(f"{color.yellow}\n- - - - - - - - - - - - - - - - - - -\n{color.end}")
         # Count lines
         count = 0 
