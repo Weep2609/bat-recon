@@ -16,13 +16,13 @@ class color():
 
 # logo default
 def logo():
-    print(f"\n  {color.red}/(__M__)\\{color.end}\tbatsub.py")
+    print(f"\n  {color.red}/(__M__)\\{color.end}\tbat_sub.py")
     print(f" {color.red}/, ,   , ,\\{color.end}\tVersion 1.1")
-    print(f"{color.red}/' ' 'V' ' '\\{color.end}\tWritte by weep2609\n")
+    print(f"{color.red}/' ' 'V' ' '\\{color.end}\tWritten by weep2609\n")
 
 # logo evil
 def logo_evil():
-    print(f"\n{color.red}      |_|    {color.end}\tbatsub.py")
+    print(f"\n{color.red}      |_|    {color.end}\tbat_sub.py")
     print(f"{color.red}     ('.') ///{color.end}\tVersion 1.1")
     print(f"{color.red}     <(_)`-/'{color.end}")
     print(f"{color.red} <-._/J L /  {color.end}Written by weep2609\n")
