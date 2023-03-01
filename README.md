@@ -3,6 +3,14 @@
 ```
 $ git clone https://github.com/Weep2609/bat-recon.git
 ```
+## Methodology
+```
+Step 1: wildcards --> subdomains && bruteforce subdomain (findomain, subfinder, assetfinder, amass, massdns,...) --> raw_subdomain
+Step 2: raw_subdomain --> httprobe/httpx --> alive_subdomain
+Step 3: alive_subdomain --> waybackurls/gau --> urls
+Step 4: urls --> subjs --> js_files
+Step 5: js_files --> linkfinder --> endpoint
+```
 ## Usage
 ```
 usage: batsub.py [-h] [-l List] [-d Domain] [-o Output] [-w Wordlist] [--enum] [--brute] [--httprobe] [--httpx] [--get_url] [--extract_js]
