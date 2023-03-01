@@ -14,11 +14,19 @@ class color():
     green = '\033[92m'
     end = '\033[0m'
 
-# logo
+# logo default
 def logo():
     print(f"\n  {color.red}/(__M__)\\{color.end}\tbatsub.py")
     print(f" {color.red}/, ,   , ,\\{color.end}\tVersion 1.1")
-    print(f"{color.red}/' ' 'V' ' '\\{color.end}\tWrite by weep2609\n")
+    print(f"{color.red}/' ' 'V' ' '\\{color.end}\tWritte by weep2609\n")
+
+# logo evil
+def logo_evil():
+    print(f"\n{color.red}      |_|    {color.end}\tbatsub.py")
+    print(f"{color.red}     ('.') ///{color.end}\tVersion 1.1")
+    print(f"{color.red}     <(_)`-/'{color.end}")
+    print(f"{color.red} <-._/J L /  {color.end}Written by weep2609\n")
+
 
 # Object Declaration
 parse = argparse.ArgumentParser()
@@ -184,12 +192,12 @@ def main():
         check_wordlist()
         brute()
     elif args.httprobe:
-        logo()
+        logo_evil()
         print(f"{color.cyan}[+] Check alive subdomain{color.end}")
         check_file()
         httprobe()
     elif args.httpx:
-        logo()
+        logo_evil()
         print(f"{color.cyan}[+] Check alive subdomain{color.end}")
         check_file()
         httpx()
@@ -208,12 +216,12 @@ def main():
         check_file()
         endpoint()
     elif args.fff:
-        logo()
+        logo_evil()
         print(f"{color.cyan}[+] Get all headers vs body of response{color.end}")
         check_file()
         fff()
     elif args.meg:
-        logo()
+        logo_evil()
         print(f"{color.cyan}[+] Fetching lots of URLs{color.end}")
         check_file()
         meg()
