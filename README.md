@@ -2,6 +2,7 @@
 ## Install
 ```
 $ git clone https://github.com/Weep2609/bat-recon.git
+$ cd bat-recon && ./install.sh
 ```
 ## Methodology
 ```
