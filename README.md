@@ -1,4 +1,10 @@
 # bat-recon
+## Install
+```
+$ git clone https://github.com/Weep2609/bat-recon.git
+```
+## Usage
+```
 usage: batsub.py [-h] [-l List] [-d Domain] [-o Output] [-w Wordlist] [--enum] [--brute] [--httprobe] [--httpx] [--get_url] [--extract_js]
                  [--endpoint] [--fff] [--meg]
 
@@ -20,3 +26,4 @@ options:
   --endpoint            Extract all endpoints from JavaScript file
   --fff                 Get all header and body of response (use fff of tomnomnom)
   --meg                 Fetching one path for all hosts (use meg of tomnomnom) - default output save to "out" folder
+```
